@@ -28,7 +28,31 @@
                 <p class="number">+79784654545</p>
             </div>
             <div class="feedback">
-                <a href="#">Обратная связь</a>
+                <script type="text/javascript">
+
+					//Функция показа
+			function show(state){
+
+					document.getElementById('window').style.display = state;			
+					document.getElementById('wrap').style.display = state; 			
+			}
+			
+		</script>
+                <!-- Задний прозрачный фон-->
+                <div onclick="show('none')" id="wrap" style="display: none;"></div>
+                <div id="window" style="display: none;">
+						
+						 <!-- Картинка крестика-->
+				<img class="close" onclick="show('none')" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">
+					
+						<!-- Картинка ipad'a-->
+				<img style="margin: 20px 0 0 50px;" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/ipad.png">
+				
+				<center>
+					<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Вернуться </a>
+				</center>
+			</div>
+                <a href="#" onclick="show('block')">Обратная связь</a>
             </div>
         </header>
     </div>
@@ -156,19 +180,26 @@
         </table>
 
     </section>
-    <div class="card">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d443.2266876937786!2d34.06874489703335!3d44.94344708486691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1493247000404" width="100%" height="591" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d443.2266876937786!2d34.06874489703335!3d44.94344708486691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1493247000404" width="100%" height="591" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="contact-inner">
+            <div class="contact-block">
+                <span class="glyphicon glyphicon-triangle-right strelka" aria-hidden="true"></span>
+                <div class="block-title">Контакты</div>
+                <div class="contacts">
+                    <div class="address"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Республика Крым, г. Симферополь</div>
+                    <div class="phones"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+79784354545</div>
+                    <div class="mail"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Senchina_voscom@mail.ru</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="contact">
-        
-    </div>
-    <footer>
+        <footer>
 
-    </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

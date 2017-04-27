@@ -179,12 +179,68 @@ h4{
 .card{
     position:relative;
 }
-.contact{
+.contact-inner{
     max-width: 940px;
     margin: 0 auto;
     padding: 118px 0 128px;
-    position: relative;
-    top: 115px;
+    position: absolute;
+    top: 1910px;
+    left: 450px;
+}
+.contact-block{
+        width: 370px;
+    max-width: 100%;
+}
+.block-title{
+    background-color: rgb(19, 158, 243);
+    color: #fff;
+    font-size: 26px;
+    font-family: 'PtSans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    padding: 21px 32px;
+    border-radius: 6px 6px 0 0;
+}
+
+.contacts{
+    background-color: rgba(34, 34, 34, 0.952941);
+    padding: 30px 30px 53px 30px;
+    border-radius: 0 0 6px 6px;
+}
+.address{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'PtSans', Arial, Helvetica, sans-serif;
+    min-height: 36px;
+    margin-bottom: 47px;
+}
+.glyphicon{
+    color: 	#feff28;
+    font-size: 32px;
+    width: 48px;
+    height: 48px;
+}
+.phones{
+    padding: 4px 0 4px 0;
+    margin-bottom: 55px;
+    color:#fff;
+    font-size: 15px;
+    font-family: 'PtSans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.mail{
+    padding: 2px 0 2px 0px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'PtSans', Arial, Helvetica, sans-serif;
+}
+.strelka{
+    position: absolute;
+    top: 330px;
+    left: 353.5px;
+    color: rgba(34, 34, 34, 0.952941);
+    font-size: 64px
+    
 }
 /**/
 
@@ -195,3 +251,38 @@ footer{
     margin:0;
 }
 
+
+
+
+script {
+    display: none;
+}
+
+#wrap {
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.725);
+    z-index: 100;
+    overflow: auto;
+}
+
+#window {
+    width: 600px;
+    height: 900px;
+    margin: 50px auto;
+    display: none;
+    background: #fff;
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+}
